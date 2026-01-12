@@ -1,0 +1,374 @@
+/* Navbar */
+.dashboard-nav {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00703c; /* corporate green */
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00703c;
+}
+
+/* ✅ Dashboard Header */
+.dashboard-header {
+  position: relative;
+  height: 80vh;
+  background: url('/public/imgforabout/Transport-bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.dashboard-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 34, 68, 0.6); /* Ardova deep navy overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.dashboard-hero-content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.dashboard-hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.dashboard-hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.dashboard-hero-content .btn-primary {
+  background: #e30613; /* Ardova red */
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.dashboard-hero-content .btn-primary:hover {
+  background: #c10510;
+}
+
+/* ✅ Intro Section */
+.dashboard-intro {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.dashboard-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #002244;
+
+}
+
+.dashboard-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* ✅ Features Section */
+.dashboard-features {
+  padding: 70px 20px;
+  background: #f8f9fa; /* light corporate background */
+  text-align: center;
+}
+
+.dashboard-features h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #002244; /* deep navy */
+}
+
+.dashboard-features .section-intro {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card i {
+  font-size: 2rem;
+  color: #e30613; /* Ardova red */
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #002244;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* ✅ Stats Section */
+.dashboard-stats {
+  background: #f8f9fa;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f7931e; /* Ardova orange */
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* ✅ Use Case Scenarios */
+.dashboard-usecases {
+  background: #fff;
+  padding: 4rem 2rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #222;
+}
+
+.usecase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.usecase-card {
+  background: #f9fafc;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.usecase-card:hover {
+  transform: translateY(-8px);
+}
+
+.usecase-card i {
+  font-size: 2rem;
+  color: #f7931e;
+  margin-bottom: 1rem;
+}
+
+.usecase-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+.usecase-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ✅ Benefits Section */
+.dashboard-benefits {
+  background: linear-gradient(to right, #f9f9f9, #ffffff);
+  padding: 4rem 2rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+}
+
+.benefit-card i {
+  font-size: 2rem;
+  color: #f7931e;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.benefit-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ✅ Contact Section */
+.dashboard-contact {
+  background: linear-gradient(135deg, #f7931e, #e67e00);
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dashboard-contact h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.dashboard-contact p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-actions .btn-primary,
+.contact-actions .btn-secondary {
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.contact-actions .btn-primary {
+  background: #fff;
+  color: #e67e00;
+}
+
+.contact-actions .btn-primary:hover {
+  background: #f1f1f1;
+}
+
+.contact-actions .btn-secondary {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.contact-actions .btn-secondary:hover {
+  background: #fff;
+  color: #e67e00;
+}
+
