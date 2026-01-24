@@ -1,0 +1,161 @@
+/* ===============================
+   CLEAN PROFESSIONAL FOOTER
+================================ */
+
+.site-footer {
+  background: #898787;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #cfa9a9;
+  padding: 60px 0 20px;
+}
+
+/* Links */
+.site-footer a {
+  color: #cfcfcf;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.site-footer a:hover {
+  color: #00bcd4;
+}
+
+/* ===============================
+   TOP FOOTER
+================================ */
+
+.footer-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+/* Brand */
+.footer-brand {
+  flex: 1 1 260px;
+}
+
+.footer-description {
+  margin-top: 14px;
+  line-height: 1.7;
+  color: #b5b5b5;
+}
+
+/* Navigation */
+.footer-nav {
+  flex: 3 1 600px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-column {
+  min-width: 140px;
+}
+
+.footer-column h4 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+}
+
+/* ===============================
+   SOCIAL ICONS
+================================ */
+
+.footer-socials {
+  flex: 1 1 200px;
+}
+
+.footer-socials h4 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.social-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.social-icons a {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.06);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.25s ease;
+}
+
+.social-icons a svg {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.social-icons a:hover {
+  background: rgba(0, 188, 212, 0.2);
+}
+
+.social-icons a:hover svg {
+  color: #00bcd4;
+}
+
+/* ===============================
+   BOTTOM FOOTER
+================================ */
+
+.footer-bottom {
+  margin-top: 50px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 12px;
+  color: #9a9a9a;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .footer-main {
+    flex-direction: column;
+  }
+
+  .footer-bottom-content {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
