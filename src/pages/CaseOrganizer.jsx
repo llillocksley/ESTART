@@ -80,7 +80,7 @@ const CaseOrganizer = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
           rel="icon"
-          href="/imgforabout/locksley-icon.png"
+          href="/public/locksley-icon.png"
           type="image/png"
         />
 
@@ -147,7 +147,7 @@ const CaseOrganizer = () => {
       {/* Hero */}
       <section
         className="project-hero"
-        style={{ backgroundImage: 'url("/imgforabout/casee-organizer.jpg")' }}
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}imgforabout/casee-organizer.jpg)` }}
         data-aos="fade-up"
       >
         <div className="hero-overlay">

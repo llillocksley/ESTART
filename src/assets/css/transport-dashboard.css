@@ -44,7 +44,7 @@
 .dashboard-header {
   position: relative;
   height: 80vh;
-  background: url('/public/imgforabout/Transport-bg.jpg') center/cover no-repeat;
+  background: url('/imgforabout/Transport-bg.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;

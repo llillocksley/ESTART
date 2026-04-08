@@ -22,7 +22,7 @@ const Footer = () => {
           <Logo />
           <p className="footer-description">
             Building data-driven transport, logistics, and digital solutions
-            with a focus on performance, reliability, and growth.
+            focused on performance, scalability, and real-world impact.
           </p>
         </div>
 
@@ -31,9 +31,9 @@ const Footer = () => {
           <div className="footer-column">
             <h4>Solutions</h4>
             <ul>
-              <li><Link to="/FleetTracker">Fleet Tracker</Link></li>
-              <li><Link to="/projects">Vehicle Reports</Link></li>
-              <li><Link to="/projects">Driver Analytics</Link></li>
+              <li><Link to="/fleettracker">Fleet Tracker</Link></li>
+              <li><Link to="/transport-optimization-dashboard">Vehicle Reports</Link></li>
+              <li><Link to="/transportinsight">Driver Analytics</Link></li>
             </ul>
           </div>
 
@@ -50,22 +50,32 @@ const Footer = () => {
             <h4>Portfolio</h4>
             <ul>
               <li><Link to="/projects">Projects</Link></li>
-              <li><Link to="/projects">Case Studies</Link></li>
-              <li><Link to="/projects">Demo Showcase</Link></li>
+              <li><Link to="/insights">Case Studies</Link></li>
+              <li><Link to="/requestdemo">Demo Showcase</Link></li>
             </ul>
           </div>
 
           <div className="footer-column">
             <h4>Connect</h4>
             <ul>
-              <li><a href="mailto:emekalocksley@gmail.com">Email</a></li>
               <li>
-                <a href="https://github.com/llillocksley" target="_blank" rel="noopener noreferrer">
+                <a href="mailto:emekalocksley@gmail.com">Email</a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/llillocksley"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/2348139222806" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://wa.me/2348139222806"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   WhatsApp
                 </a>
               </li>
@@ -77,16 +87,36 @@ const Footer = () => {
         <div className="footer-socials">
           <h4>Follow Me</h4>
           <div className="social-icons">
-            <a href="https://twitter.com/BIIGLOCKSLEY" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://twitter.com/BIIGLOCKSLEY"
+              aria-label="Twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faXTwitter} />
             </a>
-            <a href="https://linkedin.com/in/Emeka-Goodness-Locksley" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://linkedin.com/in/Emeka-Goodness-Locksley"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
-            <a href="https://wa.me/2348139222806" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://wa.me/2348139222806"
+              aria-label="WhatsApp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faWhatsapp} />
             </a>
-            <a href="https://youtube.com/BIIGLOCKSLEY" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://youtube.com/BIIGLOCKSLEY"
+              aria-label="YouTube"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faYoutube} />
             </a>
           </div>

@@ -20,7 +20,7 @@ const SmartCostAnalyzer = () => {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   {/* Favicon & Fonts */}
-  <link rel="icon" href="/imgforabout/locksley-icon.png" type="image/png" />
+  <link rel="icon" href="/public/locksley-icon.png" type="image/png" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -87,7 +87,7 @@ const SmartCostAnalyzer = () => {
       <section
         className="project-hero"
         style={{
-          backgroundImage: 'url("/imgforabout/smart-analyzer-banner.jpg")',
+          backgroundImage: `url(${import.meta.env.BASE_URL}imgforabout/smart-analyzer-banner.jpg)`,
         }}
         data-aos="fade-up"
       >
@@ -186,7 +186,7 @@ const SmartCostAnalyzer = () => {
           <div className="gallery-grid">
             <div className="gallery-item">
               <img
-                src="/imgforabout/Fuel-cost-pattern.jpg"
+              src={`${import.meta.env.BASE_URL}imgforabout/Fuel-cost-pattern.jpg`}
                 alt="Fuel Pattern Dashboard"
                 loading="lazy"
                 style={{ width: '100%', height: 'auto' }}
@@ -195,7 +195,7 @@ const SmartCostAnalyzer = () => {
             </div>
             <div className="gallery-item">
               <img
-                src="/imgforabout/Route-Cost-Optimization.jpg"
+              src={`${import.meta.env.BASE_URL}imgforabout/Route-Cost-Optimization.jpg`}
                 alt="Route Saver Visual"
                 loading="lazy"
                 style={{ width: '100%', height: 'auto' }}
@@ -204,7 +204,7 @@ const SmartCostAnalyzer = () => {
             </div>
             <div className="gallery-item">
               <img
-                src="/imgforabout/Predictive-Cost-Chart.jpg"
+              src={`${import.meta.env.BASE_URL}imgforabout/Predictive-Cost-Chart.jpg`}
                 alt="Predictive Cost Chart"
                 loading="lazy"
                 style={{ width: '100%', height: 'auto' }}
@@ -280,7 +280,7 @@ const SmartCostAnalyzer = () => {
             <div className="comparison-card">
               <h3>Before</h3>
               <img
-                src="/imgforabout/Manual-spreadsheet.jpg"
+                src={`${import.meta.env.BASE_URL}imgforabout/Manual-spreadsheet.jpg`}
                 alt="Manual Spreadsheet Example"
                 loading="lazy"
                 style={{ width: '100%', height: 'auto' }}
@@ -292,7 +292,7 @@ const SmartCostAnalyzer = () => {
             <div className="comparison-card">
               <h3>After</h3>
               <img
-                src="/imgforabout/Dashboard-insights.jpg"
+                src={`${import.meta.env.BASE_URL}imgforabout/Dashboard-insights.jpg`}
                 alt="Analyzer Dashboard View"
                 loading="lazy"
                 style={{ width: '100%', height: 'auto' }}

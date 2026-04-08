@@ -24,8 +24,8 @@ const Goals = () => {
         <meta charSet="UTF-8" />
         <title>My Goals | Emeka Locksley</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/imgforabout/locksley-icon.png" type="image/png" />
-        <link rel="stylesheet" href="/src/assets/css/style.css" />
+        <link rel="icon" href="/public/locksley-icon.png" type="image/png" />
+    
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -57,7 +57,7 @@ const Goals = () => {
           content="https://llillocksley.github.io/personal-website/goals.html"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Emeka Locksley Portfolio" />
+        <meta property="og:site_name" content="Emeka Locksley Porfolio" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="My Goals | Emeka Locksley" />
         <meta
@@ -429,27 +429,42 @@ const Goals = () => {
           </p>
           <div className="tech-grid">
             <div className="tech-item">
-              <img src="/icons/HTML5.webp" alt="HTML5" loading="lazy" />
+              <img
+              src={`${import.meta.env.BASE_URL}icons/HTML5.webp`}
+              alt="HTML5"  />
               <span>HTML5</span>
             </div>
             <div className="tech-item">
-              <img src="/icons/CSS3.webp" alt="CSS3" loading="lazy" />
+              <img
+              src={`${import.meta.env.BASE_URL}icons/CSS3.webp`}
+               alt="CSS3"  />
               <span>CSS3</span>
             </div>
             <div className="tech-item">
-              <img src="/icons/JavaScript.webp" alt="JavaScript" loading="lazy" />
+              <img
+              src={`${import.meta.env.BASE_URL}icons/JavaScript.webp`}
+               alt="JavaScript" loading="lazy" />
               <span>JavaScript</span>
             </div>
             <div className="tech-item">
-              <img src="/icons/aos-logo.jpg" alt="AOS" loading="lazy" />
+              <img
+               src={`${import.meta.env.BASE_URL}icons/aos-logo.jpg`}
+               alt="AOS"
+                />
               <span>AOS Animation</span>
             </div>
             <div className="tech-item">
-              <img src="/icons/GitHub.webp" alt="GitHub" loading="lazy" />
+              <img 
+               src={`${import.meta.env.BASE_URL}icons/GitHub.webp`} 
+              alt="GitHub"
+                />
               <span>GitHub Pages</span>
             </div>
             <div className="tech-item">
-              <img src="/icons/chart.js.png" alt="Chart.js" loading="lazy" />
+              <img 
+              src={`${import.meta.env.BASE_URL}icons/chart.js.png`}
+               alt="Chart.js" 
+                />
               <span>Chart.js</span>
             </div>
           </div>
@@ -509,22 +524,34 @@ const Goals = () => {
           </p>
           <div className="habit-grid">
             <div className="habit-card">
-              <img src="/icons/code-icon.png" alt="Coding" />
+              <img
+              src={`${import.meta.env.BASE_URL}icons/code-icon.png`}
+               alt="Coding"
+                />
               <h3>Coding Practice</h3>
               <p>Daily code sessions to stay sharp and consistent.</p>
             </div>
             <div className="habit-card">
-              <img src="/icons/book-icon.png" alt="Learning" />
+              <img 
+              src={`${import.meta.env.BASE_URL}icons/book-icon.png`}
+               alt="Learning"
+                />
               <h3>Read/Study</h3>
               <p>20+ minutes daily focused on tech and strategy books.</p>
             </div>
             <div className="habit-card">
-              <img src="/icons/notebook-icon.png" alt="Planning" />
+              <img
+               src={`${import.meta.env.BASE_URL}icons/notebook-icon.png`}
+               alt="Planning"
+                />
               <h3>Morning Planning</h3>
               <p>Prioritize tasks with clear targets every morning.</p>
             </div>
             <div className="habit-card">
-              <img src="/icons/youtube-icon.png" alt="Learning Videos" />
+              <img
+               src={`${import.meta.env.BASE_URL}icons/youtube-icon.png`}
+               alt="Learning Videos"
+                />
               <h3>Watch Tutorials</h3>
               <p>Absorb visual concepts via technical channels.</p>
             </div>

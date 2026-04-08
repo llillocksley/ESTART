@@ -60,10 +60,12 @@ nav ul li a.active {
 
 /* Container */
 .container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.2rem;
 }
+
 
 /* Toggle Button */
 .toggle-btn {
@@ -339,13 +341,18 @@ body.dark-mode .contact-form button[type="submit"]:hover {
 
 .hero {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column; /* stack children vertically safely */
+  align-items: center;     /* horizontal centering */
+  justify-content: flex-start; /* avoid vertical clipping */
   text-align: center;
-  padding: 5rem 2rem;
+  padding: 5rem 2rem;     /* optional, keep as needed */
+  min-height: calc(100svh - var(--nav-height)); /* ensures fullscreen minus navbar */
+  width: 100%;
   background: linear-gradient(135deg, #004466, #0077aa);
   color: white;
+  box-sizing: border-box; /* prevent padding from overflowing */
 }
+
 
 .hero-content h1 {
   font-size: 3rem;
@@ -476,7 +483,6 @@ body.dark-mode .contact-form button[type="submit"]:hover {
   height: 8px;
   background: #ddd;
   border-radius: 10px;
-  overflow: hidden;
   margin-top: 8px;
 }
 
@@ -643,7 +649,6 @@ body.dark-mode .contact-form button[type="submit"]:hover {
   background-color: var(--card-bg-light);
   border-radius: 12px;
   box-shadow: var(--shadow-light);
-  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -743,7 +748,6 @@ body.dark-mode .contact-form button[type="submit"]:hover {
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
   padding: 1rem;
 }
 
@@ -1104,7 +1108,6 @@ body.dark-mode .goal-description {
 .progress-bar {
   background-color: #e6e9f0;
   border-radius: 25px;
-  overflow: hidden;
   height: 24px;
 }
 
@@ -3297,7 +3300,7 @@ nav ul li a.active {
   max-width: 700px;
   margin: 0 auto 50px auto;
   line-height: 1.6;
-  color: #555;
+  color: #f2e1e1;
 }
 
 .impact-grid {
@@ -4209,7 +4212,6 @@ nav ul li a.active {
 .portfolio-card {
   background: white;
   border-radius: 8px;
-  overflow: hidden;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
 }
@@ -4809,7 +4811,6 @@ nav ul li a.active {
   background: var(--card-bg);
   border-radius: 10px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
-  overflow: hidden;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -5093,7 +5094,6 @@ nav ul li a.active {
 .insight-item {
   background: #f4f6f8;
   border-radius: 10px;
-  overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
   transition: transform 0.3s ease;
   text-align: center;
@@ -5424,6 +5424,85 @@ nav ul li a.active {
   margin-bottom: 16px;
 }
 
+
+/* DOWNLOAD SECTION 4 Data-visualizer*/
+.download-section {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+  padding: 80px 0;
+}
+
+.download-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.download-text {
+  max-width: 600px;
+}
+
+.download-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.download-text p {
+  opacity: 0.9;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* BUTTONS */
+.download-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+/* PRIMARY BUTTON */
+.btn.primary {
+  background: #22c55e;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #16a34a;
+}
+
+/* SECONDARY BUTTON */
+.btn.secondary {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn.secondary:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .download-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .download-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+
 /* Video Demo Section */
 .video-demo {
   background-color: #f9f9f9;
@@ -5454,7 +5533,6 @@ nav ul li a.active {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
-  overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   background: #000;
@@ -5524,7 +5602,6 @@ nav ul li a.active {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease;
@@ -5854,7 +5931,7 @@ nav ul li a.active {
 .transport-hero {
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
+  padding: 200px 0;
   color: #fff;
   position: relative;
   text-align: center;
@@ -6342,7 +6419,6 @@ nav ul li a.active {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
   text-align: center;
   padding: 15px;
   transition: transform 0.3s;
@@ -7592,7 +7668,6 @@ testimonial-author {
 .progress-bar {
   background-color: #e9ecef;
   border-radius: 5px;
-  overflow: hidden;
   height: 25px;
 }
 
@@ -7661,7 +7736,6 @@ testimonial-author {
   background: #eee;
   height: 10px;
   border-radius: 5px;
-  overflow: hidden;
 }
 
 .goal-progress .progress-fill {
@@ -8433,7 +8507,6 @@ testimonial-author {
   background-color: #e6e6e6;
   height: 20px;
   border-radius: 30px;
-  overflow: hidden;
 }
 
 .skill-fill {
@@ -8623,7 +8696,7 @@ testimonial-author {
   background-color: #e0e0e0;
   height: 10px;
   border-radius: 5px;
-  overflow: hidden;
+
 }
 
 .progress-fill {
@@ -8664,3 +8737,25 @@ testimonial-author {
   background-color: #6f42c1;
 }
 
+
+/* ===== GLOBAL RESET & FULL HEIGHT FIX ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

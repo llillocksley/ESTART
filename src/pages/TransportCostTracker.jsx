@@ -58,7 +58,7 @@ const TransportCostTracker = () => {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   {/* Favicon */}
-  <link rel="icon" href="/imgforabout/locksley-icon.png" type="image/png" />
+  <link rel="icon" href="/public/locksley-icon.png" type="image/png" />
 
   {/* Fonts & Icons */}
   <link
@@ -125,7 +125,7 @@ const TransportCostTracker = () => {
       <section
         className="project-hero"
         style={{
-          backgroundImage: 'url("/imgforabout/cost-tracker.jpg")',
+          backgroundImage: `url(${import.meta.env.BASE_URL}imgforabout/cost-tracker.jpg)`,
         }}
         data-aos="fade-up"
       >
@@ -293,7 +293,7 @@ const TransportCostTracker = () => {
           <div className="gallery-grid">
             <div className="gallery-item">
               <img
-                src="/imgforabout/Fuel-Analysis-Dashboard.jpg"
+                src={`${import.meta.env.BASE_URL}imgforabout/Fuel-Analysis-Dashboard.jpg`}
                 alt="Fuel Analysis Dashboard"
                 loading="lazy"
                 style={{ width: '100%', height: 'auto' }}
@@ -302,7 +302,7 @@ const TransportCostTracker = () => {
             </div>
             <div className="gallery-item">
               <img
-                src="/imgforabout/Route-Cost-Comparison.jpg"
+                src={`${import.meta.env.BASE_URL}imgforabout/Route-Cost-Comparison.jpg`}
                 alt="Route Cost Comparison"
                 loading="lazy"
                 style={{ width: '100%', height: 'auto' }}
@@ -311,7 +311,7 @@ const TransportCostTracker = () => {
             </div>
             <div className="gallery-item">
               <img
-                src="/imgforabout/Maintenance-Spend-Report.jpg"
+              src={`${import.meta.env.BASE_URL}imgforabout/Maintenance-Spend-Report.jpg`}
                 alt="Maintenance Spend Report"
                 loading="lazy"
                 style={{ width: '100%', height: 'auto' }}
@@ -331,17 +331,16 @@ const TransportCostTracker = () => {
               Explore a professionally structured transport cost report to see how
               insights are captured and presented.
             </p>
-            <a 
-            href="/docs/sample-cost-report.pdf"
-            className="download-btn"
-            download
-            >
-              <i className="fas fa-file-download" /> Download PDF
-            </a>
+<a
+    href={`${import.meta.env.BASE_URL}docs/sample-cost-report.pdf`}
+    download className="btn-download"
+  >
+    Download PDF
+  </a>
           </div>
           <div className="report-image">
             <img
-              src="/imgforabout/Maintenance-Report.jpg"
+            src={`${import.meta.env.BASE_URL}imgforabout/Maintenance-Report.jpg`}
               alt="Sample Report Preview"
               loading="lazy"
               style={{ width: '100%', height: 'auto' }}

@@ -22,7 +22,7 @@ const Insights = () => {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   {/* Favicon */}
-  <link rel="icon" href="/imgforabout/locksley-icon.png" type="image/png" />
+  <link rel="icon" href="/public/locksley-icon.png" type="image/png" />
 
   {/* Fonts & Icons */}
   <link
@@ -86,7 +86,7 @@ const Insights = () => {
       <section
         className="project-hero"
         style={{
-          backgroundImage: 'url("/imgforabout/blog-banner.jpg")',
+        backgroundImage: `url(${import.meta.env.BASE_URL}imgforabout/blog-banner.jpg)`,
         }}
         data-aos="fade-up"
       >
@@ -108,7 +108,7 @@ const Insights = () => {
           <div className="insight-grid">
             <div className="insight-card">
               <img
-                src="/imgforabout/Insight.jpg"
+              src={`${import.meta.env.BASE_URL}imgforabout/Insight.jpg`}
                 alt="Data Strategy"
                 loading="lazy"
                 style={{ width: '100%', height: 'auto' }}
@@ -127,7 +127,7 @@ const Insights = () => {
 
             <div className="insight-card">
               <img
-                src="/imgforabout/Insight-decision-making.jpg"
+              src={`${import.meta.env.BASE_URL}imgforabout/Insight-decision-making.jpg`}
                 alt="Smart Transport Decision"
                 loading="lazy"
                 style={{ width: '100%', height: 'auto' }}
@@ -152,7 +152,7 @@ const Insights = () => {
         <div className="container featured-grid">
           <div className="featured-image">
             <img
-              src="/imgforabout/Modern-Transport-Data-Strategies.jpg"
+            src={`${import.meta.env.BASE_URL}imgforabout/Modern-Transport-Data-Strategies.jpg`}
               alt="Transport Insight Highlight"
               loading="lazy"
               style={{ width: '100%', height: 'auto' }}
@@ -175,7 +175,7 @@ const Insights = () => {
 
           <div className="insight-card">
             <img
-              src="/imgforabout/Smart-logistics-strategies.jpg"
+                        src={`${import.meta.env.BASE_URL}imgforabout/Smart-logistics-strategies.jpg`}
               alt="Smart Logistics Strategy"
               loading="lazy"
               style={{ width: '100%', height: 'auto' }}

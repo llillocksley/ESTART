@@ -21,7 +21,7 @@ const DataDrivenDecision = () => {
   <meta name="author" content="Emeka Goodness Locksley" />
 
   {/* Favicon */}
-  <link rel="icon" href="/imgforabout/locksley-icon.png" type="image/png" />
+  <link rel="icon" href="/public/locksley-icon.png" type="image/png" />
 
   {/* External Fonts / Icons */}
   <link
@@ -84,7 +84,7 @@ const DataDrivenDecision = () => {
       <section
         className="project-hero"
         style={{
-          backgroundImage: 'url("/imgforabout/Data-Driven-Decision.jpg")',
+          backgroundImage: `url(${import.meta.env.BASE_URL}imgforabout/Data-Driven-Decision.jpg)`,
         }}
         data-aos="fade-up"
       >
@@ -245,7 +245,7 @@ const DataDrivenDecision = () => {
           <div className="insight-grid">
             <div className="insight-item">
               <img
-                src="/imgforabout/insight-dashboard.jpg"
+              src={`${import.meta.env.BASE_URL}imgforabout/insight-dashboard.jpg`}
                 alt="Dashboard Overview"
                 loading="lazy"
               />
@@ -253,7 +253,7 @@ const DataDrivenDecision = () => {
             </div>
             <div className="insight-item">
               <img
-                src="/imgforabout/Trend-analysis.jpg"
+                src={`${import.meta.env.BASE_URL}imgforabout/Trend-analysis.jpg`}
                 alt="Trend Analysis Graph"
                 loading="lazy"
                 style={{ width: '100%', height: 'auto' }}
@@ -262,7 +262,7 @@ const DataDrivenDecision = () => {
             </div>
             <div className="insight-item">
               <img
-                src="/imgforabout/vehicle-performance.jpg"
+                src={`${import.meta.env.BASE_URL}imgforabout/vehicle-performance.jpg`}
                 alt="Vehicle Performance Data"
                 loading="lazy"
               />
@@ -270,7 +270,7 @@ const DataDrivenDecision = () => {
             </div>
             <div className="insight-item">
               <img
-                src="/imgforabout/incident-visual.jpg"
+                src={`${import.meta.env.BASE_URL}imgforabout/incident-visual.jpg`}
                 alt="Incident Monitoring Chart"
                 loading="lazy"
               />
@@ -291,7 +291,7 @@ const DataDrivenDecision = () => {
           <div className="gallery-grid">
             <div className="gallery-card">
               <img
-                src="/imgforabout/Monthly.jpg"
+                src={`${import.meta.env.BASE_URL}imgforabout/Monthly.jpg`}
                 alt="Data Summary Chart"
                 loading="lazy"
               />
@@ -299,7 +299,7 @@ const DataDrivenDecision = () => {
             </div>
             <div className="gallery-card">
               <img
-                src="/imgforabout/fuel-efficiency-trend.jpg"
+                src={`${import.meta.env.BASE_URL}imgforabout/fuel-efficiency-trend.jpg`}
                 alt="Fuel Efficiency Trends"
                 loading="lazy"
               />
@@ -307,7 +307,7 @@ const DataDrivenDecision = () => {
             </div>
             <div className="gallery-card">
               <img
-                src="/imgforabout/Performance-tracking.jpg"
+              src={`${import.meta.env.BASE_URL}imgforabout/Performance-tracking.jpg`}
                 alt="Driver Performance Analytics"
                 loading="lazy"
               />
@@ -518,12 +518,12 @@ const DataDrivenDecision = () => {
             see how insights are structured.
           </p>
 <a
-  href="/docs/Data-Driven-Decision.pdf"
-  className="download-btn"
-  download
->
-  📄 Download PDF Report
-</a>
+    href={`${import.meta.env.BASE_URL}docs/Data-Driven-Decision.pdf`}
+    download
+    className="btn-download"
+  >
+    Download Now
+  </a>
 
         </div>
       </section>

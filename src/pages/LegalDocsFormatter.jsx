@@ -21,7 +21,7 @@ export default function LegalDocsFormatter() {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   {/* Fav Icon & Fonts */}
-  <link rel="icon" href="/imgforabout/locksley-icon.png" type="image/png" />
+  <link rel="icon" href="/public/locksley-icon.png" type="image/png" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -94,10 +94,13 @@ export default function LegalDocsFormatter() {
 </header>
 
 
+
+
       {/* Hero Banner */}
       <section
         className="hero-banner legal-docs-hero"
-        style={{ backgroundImage: 'url("/imgforabout/legal-docs-banner.jpg")' }}
+        style={{
+        backgroundImage: `url(${import.meta.env.BASE_URL}imgforabout/legal-docs-banner.jpg)`,}}       
         data-aos="fade-up"
       >
         <div className="overlay">
@@ -178,7 +181,7 @@ export default function LegalDocsFormatter() {
           </div>
           <div className="formatter-image">
             <img
-              src="/imgforabout/Transport-contract.jpg"
+              src={`${import.meta.env.BASE_URL}imgforabout/Transport-contract.jpg`}
               alt="Formatted Legal Docs"
               loading="lazy"
               style={{ width: '100%', height: 'auto' }}
@@ -335,7 +338,7 @@ export default function LegalDocsFormatter() {
           </div>
           <div className="benefits-image">
             <img
-              src="/imgforabout/Legal-transport.jpg"
+            src={`${import.meta.env.BASE_URL}imgforabout/Legal-transport.jpg`}
               alt="Legal Benefits"
               loading="lazy"
               style={{ width: '100%', height: 'auto' }}
@@ -429,12 +432,12 @@ export default function LegalDocsFormatter() {
   <Link to="/contact" className="cta-btn">
     Talk to Me
   </Link>
-  <a
-    href="/docs/Legal-doc-formater.pdf"
-    className="cta-btn alt-btn"
+<a
+    href={`${import.meta.env.BASE_URL}docs/Legal-doc-formater.pdf`}
     download
+    className="btn-download"
   >
-    Download Sample PDF
+    Download Now
   </a>
 </div>
 

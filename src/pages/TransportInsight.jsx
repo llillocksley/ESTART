@@ -20,7 +20,7 @@ const TransportInsight = () => {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   {/* Favicon */}
-  <link rel="icon" href="/imgforabout/locksley-icon.png" type="image/png" />
+  <link rel="icon" href="/public/locksley-icon.png" type="image/png" />
 
   {/* Fonts & Icons */}
   <link
@@ -84,7 +84,7 @@ const TransportInsight = () => {
       <section
         className="transport-hero"
         style={{
-          backgroundImage: 'url("/imgforabout/transport-insight-banner.jpg")',
+          backgroundImage: `url(${import.meta.env.BASE_URL}imgforabout/Insight-banner.jpg)`,
         }}
         data-aos="fade-up"
       >
@@ -142,7 +142,7 @@ const TransportInsight = () => {
             </div>
             <div className="smart-image">
               <img
-                src="/imgforabout/smart-logistics.jpg"
+              src={`${import.meta.env.BASE_URL}imgforabout/smart-logistics.jpg`}
                 alt="Smarter Transport"
                 style={{ width: '100%', height: 'auto' }}
                 loading="lazy"
@@ -219,7 +219,7 @@ const TransportInsight = () => {
           </div>
           <div className="data-image">
             <img
-              src="/imgforabout/Data-driven.jpg"
+            src={`${import.meta.env.BASE_URL}imgforabout/Data-driven.jpg`}
               alt="Data-backed Transport Decisions"
               loading="lazy"
               style={{ width: '100%', height: 'auto' }}

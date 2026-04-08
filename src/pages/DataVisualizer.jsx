@@ -65,7 +65,7 @@ const DataVisualizer = () => {
   />
 
   {/* Favicon */}
-  <link rel="icon" href="/imgforabout/locksley-icon.png" type="image/png" />
+  <link rel="icon" href="/public/locksley-icon.png" type="image/png" />
 
   {/* AOS Animation Styles */}
   <link
@@ -89,7 +89,7 @@ const DataVisualizer = () => {
       {/* Hero Section */}
       <section
         className="project-hero"
-        style={{ backgroundImage: 'url("/imgforabout/data-visualizer-banner.jpg")' }}
+        style={{ backgroundImage:  `url(${import.meta.env.BASE_URL}imgforabout/data-visualizer-banner.jpg)` }}
         data-aos="fade-up"
       >
         <div className="hero-overlay">
@@ -212,7 +212,7 @@ const DataVisualizer = () => {
           <div className="gallery-grid">
             <div className="gallery-item">
               <img
-                src="/imgforabout/Daashboard.jpg"
+              src={`${import.meta.env.BASE_URL}imgforabout/Daashboard.jpg`}
                 alt="Data Visualizer Dashboard 1"
                 loading="lazy"
                 style={{ width: '100%', height: 'auto' }}
@@ -221,7 +221,7 @@ const DataVisualizer = () => {
             </div>
             <div className="gallery-item">
               <img
-                src="/imgforabout/Dashbooard.jpg"
+                src={`${import.meta.env.BASE_URL}imgforabout/Dashbooard.jpg`}
                 alt="Data Visualizer Dashboard 2"
                 loading="lazy"
                 style={{ width: '100%', height: 'auto' }}
@@ -230,7 +230,7 @@ const DataVisualizer = () => {
             </div>
             <div className="gallery-item">
               <img
-                src="/imgforabout/Dashhboard.jpg"
+                src={`${import.meta.env.BASE_URL}imgforabout/Dashhboard.jpg`}
                 alt="Data Visualizer Dashboard 3"
                 loading="lazy"
                 style={{ width: '100%', height: 'auto' }}
@@ -239,7 +239,7 @@ const DataVisualizer = () => {
             </div>
             <div className="gallery-item">
               <img
-                src="/imgforabout/Data-dashboard.jpg"
+                src={`${import.meta.env.BASE_URL}imgforabout/Data-dashboard.jpg`}
                 alt="Data Visualizer Dashboard 4"
                 loading="lazy"
                 style={{ width: '100%', height: 'auto' }}
@@ -279,6 +279,33 @@ const DataVisualizer = () => {
           </div>
         </div>
       </section>
+
+      {/* DOWNLOAD SECTION */}
+<section className="download-section">
+  <div className="container download-container">
+    
+    <div className="download-text">
+      <h2>Get the Data Visualizer</h2>
+      <p>
+        Download the application and start transforming raw data into powerful,
+        interactive insights. Built for speed, clarity, and decision-making.
+      </p>
+
+      <div className="download-buttons">
+      
+        <a href={`${import.meta.env.BASE_URL}docs/data-visualizer.pdf`}
+         download className="btn primary">
+          Download Now
+        </a>
+
+        <a href="#" className="btn secondary">
+          View Documentation
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
       {/* CTA */}
       <section className="project-cta container" data-aos="fade-up">

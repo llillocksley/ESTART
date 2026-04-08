@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import Footer from "../components/Footer";
 import '../assets/css/style.css';
 import '../assets/css/Projects.css';
-import { Link } from "react-router-dom";
+import { href, Link } from "react-router-dom";
 
 
 const projectData = [
@@ -14,8 +14,10 @@ const projectData = [
     title: 'Responsive Portfolio',
     category: 'web',
     description: 'A sleek portfolio site built using HTML, CSS & JavaScript.',
-    image: '/public/imgforabout/Espace.jpeg',
-    href: '/Portfolio',   // ✅ React route instead of portfolio.html
+    image: `${import.meta.env.BASE_URL}imgforabout/Espace.jpeg`,
+    internal:true,
+    path: '/Portfolio',   // ✅ React route instead of portfolio.html
+    internal: true,
     icon: null,
   },
   {
@@ -23,63 +25,70 @@ const projectData = [
     title: 'Fleet Tracker',
     category: 'transport',
     description: 'A dashboard for monitoring transport and delivery operations.',
-    image: '/public/imgforabout/FFleet-tracker.jpg',
-    href: '/fleetTracker',   // ✅ React route
+    image: `${import.meta.env.BASE_URL}imgforabout/FFleet-tracker.jpg`,
+    internal:true,
+    path: '/fleetTracker',   // ✅ React route
     icon: null,
   },
-  {
-    id: 'case-organizer',
-    title: 'Case Organizer',
-    category: 'legal',
-    description: 'Helps legal teams manage and categorize documents efficiently.',
-    image: '/public/imgforabout/case-organizer.jpg',
-    href: '/caseOrganizer',   // ✅ React route
-    icon: null,
-  },
-  {
-    id: 'data-visualizer',
-    title: 'Data Visualizer',
-    category: 'data',
-    description: 'Turns raw data into interactive and easy-to-read charts.',
-    image: '/public/imgforabout/data-visualizer.jpg',
-    href: '/DataVisualizer',   // ✅ React route
-    icon: null,
-  },
+{
+  id: 'case-organizer',
+  title: 'Case Organizer',
+  category: 'legal',
+  description: 'Helps legal teams manage and categorize documents efficiently.',
+  image: `${import.meta.env.BASE_URL}imgforabout/Case-organizer.jpg`,
+  internal:true,
+  path: '/caseorganizer', // ✅ must match route exactly
+  icon: null,
+},
+
+ {
+  id: 'data-visualizer',
+  title: 'Data Visualizer',
+  category: 'data',
+  description: 'Turns raw data into interactive and easy-to-read charts.',
+  image: `${import.meta.env.BASE_URL}imgforabout/data-visualizer.jpg`,
+  internal:true,
+  path: '/datavisualizer', // ✅ lowercase & matches route
+  icon: null,
+},
   {
     id: 'personal-website',
     title: 'Personal Website',
     category: 'web',
     description: 'This portfolio showcases my growth as a web developer.',
-    image: '/imgforabout/personal-website.jpg',
-    href: 'https://llillocksley.github.io/personal-website/', // ✅ external stays the same
+    image: `${import.meta.env.BASE_URL}imgforabout/personal-website.jpg`,
+    internal:true,
+    path: 'https://llillocksley.github.io/personal-website/', // ✅ external stays the same
     icon: '🌐',
   },
-  {
-    id: 'transport-cost-tracker',
-    title: 'Transport Cost Tracker',
-    category: 'transport',
-    description: 'A planned app for tracking and analyzing transportation expenses.',
-    image: '/imgforabout/Trackker.jpg',
-    href: '/TransportCostTracker',   // ✅ React route
-    icon: '🚚',
-  },
+{
+  id: 'transport-cost-tracker',
+  title: 'Transport Cost Tracker',
+  category: 'transport',
+  description: 'A planned app for tracking and analyzing transportation expenses.',
+  image: `${import.meta.env.BASE_URL}imgforabout/Trackker.jpg`,
+  path: '/transportcosttracker',
+  internal: true,
+  icon: '🚚',
+},
   {
     id: 'legal-docs-formatter',
     title: 'Legal Docs Formatter',
     category: 'legal',
     description: 'Concept project to help organize and style legal documentation.',
-    image: '/imgforabout/Legal1.jpg',
-    href: '/LegalDocsFormatter',   // ✅ React route
+    image: `${import.meta.env.BASE_URL}imgforabout/Legal1.jpg`,
+    internal:true,
+    path: '/LegalDocsFormatter',   // ✅ React route
     icon: '⚖️',
   },
   {
     id: 'data-driven-decision',
     title: 'Data-Driven Decision Making',
     category: 'data',
-    description:
-      'I leverage data analytics to help businesses make smarter decisions in transport and legal operations.',
-    image: '/imgforabout/Data.jpg',
-    href: '/DataDrivenDecision',   // ✅ React route
+    description:'I leverage data analytics to help businesses make smarter decisions in transport and legal operations.',
+    image: `${import.meta.env.BASE_URL}imgforabout/Data.jpg`,
+    internal:true,
+    path: '/DataDrivenDecision',   // ✅ React route
     icon: '📈',
   },
 ];
@@ -120,7 +129,7 @@ export default function Projects() {
   <meta name="robots" content="index, follow" />
 
   {/* Favicon & Fonts */}
-  <link rel="icon" href="/imgforabout/locksley-icon.png" type="image/png" />
+  <link rel="icon" href="/public/locksley-icon.png" type="image/png" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -271,23 +280,13 @@ export default function Projects() {
           {proj.icon && <span style={{ marginRight: 6 }}>{proj.icon}</span>}
           {proj.title}
         </h3>
+
         <p>{proj.description}</p>
 
-        {/* If it's an internal page (React route) */}
-        {proj.internal ? (
-          <Link to={proj.href} className="btn">
-            View Demo
-          </Link>
-        ) : (
-          <a
-            href={proj.href}
-            className="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Demo
-          </a>
-        )}
+        {/* INTERNAL ROUTE */}
+        <Link to={proj.path} className="btn">
+          View Demo
+        </Link>
       </div>
     ))}
   </div>
@@ -309,7 +308,7 @@ export default function Projects() {
   <h2>Featured Work</h2>
   <div className="featured-card">
     <img
-      src="/imgforabout/Smart-Transport-Cost-Analyzer.jpg"
+      src={`${import.meta.env.BASE_URL}imgforabout/Smart-Transport-Cost-Analyzer.jpg`}
       alt="Featured Project Screenshot"
       loading="lazy"
       style={{ width: "100%", height: "auto" }}
@@ -358,19 +357,22 @@ export default function Projects() {
           alt={`${proj.title} screenshot`}
           loading="lazy"
         />
+
         <h3>
           {proj.icon && <span style={{ marginRight: 6 }}>{proj.icon}</span>}
           {proj.title}
         </h3>
+
         <p>{proj.description}</p>
 
+        {/* INTERNAL ROUTE */}
         {proj.internal ? (
-          <Link to={proj.href} className="btn">
+          <Link to={proj.path} className="btn">
             View Demo
           </Link>
         ) : (
           <a
-            href={proj.href}
+            href={proj.path}
             className="btn"
             target="_blank"
             rel="noopener noreferrer"
@@ -382,7 +384,6 @@ export default function Projects() {
     ))}
   </div>
 </div>
-
 
       <Footer />
     </div>

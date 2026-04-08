@@ -353,19 +353,25 @@ export default function CPALandingFunnel({ brandName = "Your Brand" }) {
 
     <div className="features-grid">
       <div className="feature-box">
-        <img src="/public/icons/conversion.png" alt="Conversion" />
+        <img 
+        src={`${import.meta.env.BASE_URL}icons/conversion.png`}
+         alt="Conversion" />
         <h3>High Conversion Rates</h3>
         <p>Our funnel is optimized to deliver maximum conversions for every click.</p>
       </div>
 
       <div className="feature-box">
-        <img src="/public/icons/secure.png" alt="Security" />
+        <img 
+         src={`${import.meta.env.BASE_URL}icons/secure.png`}
+         alt="Security" />
         <h3>Secure and Reliable</h3>
         <p>Every transaction is protected, ensuring user trust and long-term growth.</p>
       </div>
 
       <div className="feature-box">
-        <img src="/public/icons/analytics.png" alt="Analytics" />
+        <img 
+        src={`${import.meta.env.BASE_URL}icons/analytics.png`}
+         alt="Analytics" />
         <h3>Detailed Analytics</h3>
         <p>Gain full insights into your leads, clicks, and conversions in real time.</p>
       </div>
@@ -440,8 +446,9 @@ export default function CPALandingFunnel({ brandName = "Your Brand" }) {
   <div className="container strategy-grid">
     <div className="strategy-image">
       <img
-        src="/public/imgforabout/Strategy.jpg"
+        src={`${import.meta.env.BASE_URL}imgforabout/Strategy.jpg`}
         alt="CPA strategy illustration"
+        loading='lazy'
       />
     </div>
 
@@ -484,7 +491,10 @@ export default function CPALandingFunnel({ brandName = "Your Brand" }) {
 
 
     <div className="world-map">
-      <img src="/public/imgforabout/Global-presence-map.jpg" alt="Global presence map" />
+      <img 
+      src={`${import.meta.env.BASE_URL}imgforabout/Global-presence-map.jpg`}
+      alt="Global presence map"
+      loading='lazy' />
     </div>
 
   </div>
@@ -536,7 +546,10 @@ export default function CPALandingFunnel({ brandName = "Your Brand" }) {
     </div>
 
     <div className="why-image">
-      <img src="/imgforabout/chooseus.jpg" alt="Why choose us illustration" />
+      <img
+      src={`${import.meta.env.BASE_URL}imgforabout/chooseus.jpg`} 
+      alt="Why choose us illustration"
+      loading='lazy' />
     </div>
   </div>
 </section>
@@ -551,7 +564,10 @@ export default function CPALandingFunnel({ brandName = "Your Brand" }) {
 
     <div className="success-grid">
       <div className="success-card">
-        <img src="/imgforabout/Grace.jpeg" alt="Affiliate 1" />
+        <img 
+        src={`${import.meta.env.BASE_URL}imgforabout/Grace.jpeg`}
+         alt="Affiliate 1"
+         loading='lazy' />
         <div className="success-content">
           <h4>Grace Nimi Afolabi</h4>
           <p className="role">Affiliate Marketer, USA</p>
@@ -563,7 +579,10 @@ export default function CPALandingFunnel({ brandName = "Your Brand" }) {
       </div>
 
       <div className="success-card">
-        <img src="/imgforabout/Maam.jpeg" alt="Affiliate 2" />
+        <img
+        src={`${import.meta.env.BASE_URL}imgforabout/Maam.jpeg`}
+        alt="Affiliate 2"
+        loading='lazy' />
         <div className="success-content">
           <h4>Esther Sley</h4>
           <p className="role">Performance Marketer, Nigeria</p>
@@ -575,7 +594,10 @@ export default function CPALandingFunnel({ brandName = "Your Brand" }) {
       </div>
 
       <div className="success-card">
-        <img src="/imgforabout/Mimi.jpeg" alt="Affiliate 3" />
+        <img
+        src={`${import.meta.env.BASE_URL}imgforabout/Mimi.jpeg`} 
+        alt="Affiliate 3"
+        loading='lazy' />
         <div className="success-content">
           <h4>Miracle Mercy Sley</h4>
           <p className="role">Affiliate Partner, Nigeria</p>
@@ -609,7 +631,10 @@ export default function CPALandingFunnel({ brandName = "Your Brand" }) {
     </div>
 
     <div className="analytics-image">
-      <img src="/imgforabout/Dashboard-insights.jpg" alt="Analytics Dashboard" />
+      <img
+      src={`${import.meta.env.BASE_URL}imgforabout//Dashboard-insights.jpg`}
+       alt="Analytics Dashboard"
+       loading='lazy' />
     </div>
   </div>
 </section>
@@ -673,17 +698,27 @@ export default function CPALandingFunnel({ brandName = "Your Brand" }) {
 
       <div className="security-features">
         <div className="feature">
-          <img src="/public/icons/data-encryption.png" alt="Data Encryption" />
+          <img 
+          src={`${import.meta.env.BASE_URL}icons/data-encryption.png`} 
+          alt="Data Encryption"
+          loading='lazy' />
           <h4>Data Encryption</h4>
           <p>All user data is protected using 256-bit SSL encryption.</p>
         </div>
         <div className="feature">
-          <img src="/public/icons/regulatory-compliance.png" alt="Compliance" />
+          <img 
+          src={`${import.meta.env.BASE_URL}icons/regulatory-compliance.png`}
+           alt="Compliance" 
+           loading='lazy'/>
           <h4>Regulatory Compliance</h4>
           <p>We comply with GDPR and global affiliate marketing standards.</p>
         </div>
         <div className="feature">
-          <img src="/public/icons/secure-server.png" alt="Secure Servers" />
+
+          <img 
+          src={`${import.meta.env.BASE_URL}icons/secure-server.png"`}
+          alt="Secure Servers"
+          loading='lazy' />
           <h4>Secure Servers</h4>
           <p>Hosted on trusted cloud infrastructure for maximum uptime.</p>
         </div>
@@ -691,7 +726,10 @@ export default function CPALandingFunnel({ brandName = "Your Brand" }) {
     </div>
 
     <div className="security-image">
-      <img src="/public/imgforabout/security-dashboard.jpg" alt="Security Illustration" />
+      <img
+      src={`${import.meta.env.BASE_URL}imgforabout/security-dashboard.jpg`} 
+      alt="Security Illustration"
+      loading='lazy' />
     </div>
   </div>
 </section>

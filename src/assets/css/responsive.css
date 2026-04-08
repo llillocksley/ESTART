@@ -1,0 +1,159 @@
+/* =========================
+   ROOT VARIABLES
+   ========================= */
+:root {
+  --nav-height: 100px; /* adjust if your navbar is taller or shorter */
+}
+
+/* =========================
+   MOBILE-FIRST BASE STYLES
+   ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.2rem;
+}
+
+section {
+  width: 100%;
+  padding: 3rem 1.2rem;
+}
+
+/* Typography */
+h1 {
+  font-size: clamp(1.8rem, 6vw, 3rem);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(1.4rem, 5vw, 2.2rem);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Buttons & links (thumb-friendly) */
+a,
+button {
+  min-height: 44px;
+  padding: 0.6rem 1rem;
+}
+
+/* =========================
+   HERO SECTION FULLSCREEN
+   ========================= */
+.hero {
+  width: 100%;
+  min-height: calc(100svh - var(--nav-height));
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center content horizontally */
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+  text-align: center; /* optional, looks nice on phones */
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: calc(100svh - var(--nav-height));
+    padding-top: 1rem; /* small push for balance */
+    padding-bottom: 1rem;
+  }
+}
+
+/* =========================
+   GRID SYSTEM (PROJECTS, CARDS)
+   ========================= */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* =========================
+   NAVIGATION SUPPORT
+   ========================= */
+.navbar {
+  width: 100%;
+  height: var(--nav-height);
+  padding: 1rem 1.2rem;
+  position: fixed; /* keeps navbar on top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white; /* or transparent */
+}
+
+.nav-links a {
+  display: block;
+  padding: 0.8rem 0;
+}
+
+/* =========================
+   TABLET BREAKPOINT
+   ========================= */
+@media (min-width: 768px) {
+  section {
+    padding: 4rem 3rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 0 1rem;
+  }
+}
+
+/* =========================
+   LAPTOP / DESKTOP BREAKPOINT
+   ========================= */
+@media (min-width: 1200px) {
+  section {
+    padding: 6rem 6vw;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Ensure the app takes full height */
+html, body, #root, .app {
+  height: 100%;
+  width: 100%;
+}
+
+/* Make app a vertical flex container */
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content fills remaining space under navbar */
+.main-content {
+  flex: 1;             /* THIS IS KEY */
+  display: flex;
+  flex-direction: column;
+}

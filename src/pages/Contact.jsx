@@ -55,7 +55,7 @@ const Contact = () => {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   {/* Favicon */}
-  <link rel="icon" href="/imgforabout/locksley-icon.png" type="image/png" />
+  <link rel="icon" href="/public/locksley-icon.png" type="image/png" />
 
   {/* Font Awesome */}
   <link

@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react';
 import Footer from "../components/Footer";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import '../assets/css/style.css';
+import "../assets/css/style.css";
+
 
 import { Link } from "react-router-dom";
 
@@ -89,7 +90,7 @@ export default function Home() {
   <meta name="twitter:image" content="/imgforabout/forHTML.jpg" />
 
   {/* Favicon */}
-  <link rel="icon" href="/imgforabout/locksley-icon.png" type="image/png" />
+  <link rel="icon" href="/public/locksley-icon.png" type="image/png" />
 
   {/* External CSS / Fonts */}
   <link
@@ -104,7 +105,6 @@ export default function Home() {
   />
 
   {/* Optional local stylesheet if needed */}
-  <link rel="stylesheet" href="/assets/css/style.css" />
 </Helmet>
 
 
@@ -402,13 +402,13 @@ export default function Home() {
           <h2 className="section-title">Featured Work</h2>
           <div className="featured-work-grid">
             <article className="featured-work-card">
-              <img
-                src="/imgforabout/Transport.JPG"
-                alt="Transport Optimization Dashboard Screenshot"
-                loading="lazy"
-                className="project-image"
-                style={{ width: '100%', height: 'auto' }}
-              />
+<img
+  src={`${import.meta.env.BASE_URL}imgforabout/Transport.JPG`}
+  alt="Transport Optimization Dashboard Screenshot"
+  loading="lazy"
+  className="project-image"
+  style={{ width: '100%', height: 'auto' }}
+/>
               <div className="featured-work-content">
                 <h3>Transport Optimization Dashboard</h3>
                 <p>
@@ -432,13 +432,13 @@ export default function Home() {
               </div>
             </article>
             <article className="featured-work-card">
-              <img
-                src="/imgforabout/Dashboard.jpg"
-                alt="CPA Landing Funnel Screenshot"
-                loading="lazy"
-                className="project-image"
-                style={{ width: '100%', height: 'auto' }}
-              />
+<img
+  src={`${import.meta.env.BASE_URL}imgforabout/Dashboard.jpg`}
+  alt="CPA Landing Funnel Screenshot"
+  loading="lazy"
+  className="project-image"
+  style={{ width: '100%', height: 'auto' }}
+/>
               <div className="featured-work-content">
                 <h3>CPA Landing Funnel</h3>
                 <p>

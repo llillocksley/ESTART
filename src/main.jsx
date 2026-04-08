@@ -16,6 +16,7 @@ import "./assets/css/CPAlandingfunnel.css";
 import "./assets/css/demo.css";
 import "./assets/css/navbar.css";
 import "./assets/css/footer.css";
+import "./assets/css/responsive.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <StrictMode>

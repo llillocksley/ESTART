@@ -20,7 +20,7 @@ const Portfolio = () => {
       id: 1,
       title: "Fleet Tracker",
       category: ["analytics", "management"],
-      image: "/imgforabout/Fleet-tracker-overvview.jpg",
+      image: "/ESTART/imgforabout/Fleet-tracker-overvview.jpg",
       description:
         "Real-time fleet management solution built for transport visibility and analytics.",
       stats: [
@@ -34,7 +34,7 @@ const Portfolio = () => {
       id: 2,
       title: "Case Organizer",
       category: ["management", "analytics"],
-      image: "/imgforabout/Case-organizer.jpg",
+      image: "/ESTART/imgforabout/Case-organizer.jpg",
       description:
         "A system that streamlines transport case management for accountability and compliance.",
       stats: [
@@ -48,7 +48,7 @@ const Portfolio = () => {
       id: 3,
       title: "Data Visualizer",
       category: ["analytics", "visualization"],
-      image: "/imgforabout/data-visualizer.jpg",
+      image: "/ESTART/imgforabout/data-visualizer.jpg",
       description:
         "A tool that simplifies transport data into clear, actionable visuals for smarter decision-making.",
       stats: [
@@ -189,7 +189,7 @@ const Portfolio = () => {
           </div>
           <div className="featured-image">
             <img
-              src="/imgforabout/Fleet-tracker-overvview.jpg"
+            src={`${import.meta.env.BASE_URL}imgforabout/Fleet-tracker-overvview.jpg`}
               alt="Fleet Tracker Project"
               loading="lazy"
             />

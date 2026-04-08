@@ -9,6 +9,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   color: #222;
   line-height: 1.6;
+  padding-top: 128px;
 }
 
 /* Full blurry background image */
@@ -18,8 +19,10 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background: url('../imgforabout/smartt-logistics.jpg') no-repeat center center fixed;
+
+  background: url('/imgforabout/smartt-logistics.jpg') no-repeat center center fixed;
   background-size: cover;
+
   filter: blur(10px);
   z-index: 0;
 }

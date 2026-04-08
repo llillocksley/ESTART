@@ -39,10 +39,7 @@ const About = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         {/* External Styles */}
-        <link rel="stylesheet" href="/assets/css/style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-        <link rel="icon" href="/imgforabout/locksley-icon.png" type="image/png" />
+        <link rel="icon" href="/public/locksley-icon.png" type="image/png" />
 
         {/* SEO Meta */}
         <meta name="description" content="Explore Emeka Locksley's professional portfolio — projects, transport solutions, and data-driven tools." />
@@ -78,7 +75,7 @@ const About = () => {
         <div className="about-hero-inner">
           <div className="about-image-box">
             <img
-              src="/public/imgforabout/EMEKA.jpg"
+            src={`${import.meta.env.BASE_URL}imgforabout/EMEKA.jpg`}
               alt="Emeka Locksley"
               className="about-image"
               loading="lazy"

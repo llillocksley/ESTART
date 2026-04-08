@@ -76,8 +76,7 @@ const TransportOptimizationDashboard = () => {
           onLoad="this.onload=null;this.rel='stylesheet'"
         />
 
-        {/* Optional local stylesheet */}
-        <link rel="stylesheet" href="/assets/css/style.css" />
+
       </Helmet>
 
 

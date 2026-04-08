@@ -101,7 +101,7 @@ const FleetTracker = () => {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   {/* Favicon */}
-  <link rel="icon" href="/imgforabout/locksley-icon.png" type="image/png" />
+  <link rel="icon" href="/public/locksley-icon.png" type="image/png" />
 
   {/* Font Awesome CDN */}
   <link
@@ -167,7 +167,7 @@ const FleetTracker = () => {
       {/* Hero Section */}
       <section
         className="project-hero"
-        style={{ backgroundImage: 'url("/imgforabout/fleet-bg.jpg")' }}
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}imgforabout/fleet-bg.jpg)` }}
         data-aos="fade-up"
       >
         <div className="hero-overlay">
@@ -210,7 +210,7 @@ const FleetTracker = () => {
         </div>
         <div className="overview-image">
           <img
-            src="/imgforabout/FleettrackerOverview.jpg"
+          src={`${import.meta.env.BASE_URL}imgforabout/FleettrackerOverview.jpg`}
             alt="Fleet Tracker Overview"
             loading="lazy"
           />
@@ -269,19 +269,27 @@ const FleetTracker = () => {
           </p>
           <div className="tech-grid">
             <div className="tech-card">
-              <img src="/icons/HTML5.webp" alt="HTML5" />
+              <img 
+              src={`${import.meta.env.BASE_URL}icons/HTML5.webp`}
+               alt="HTML5" />
               <p>HTML5</p>
             </div>
             <div className="tech-card">
-              <img src="/icons/CSS3.webp" alt="CSS3" />
+              <img 
+              src={`${import.meta.env.BASE_URL}icons/CSS3.webp`}
+               alt="CSS3" />
               <p>CSS3</p>
             </div>
             <div className="tech-card">
-              <img src="/icons/JavaScript.webp" alt="JavaScript" />
+              <img
+              src={`${import.meta.env.BASE_URL}icons/JavaScript.webp`}
+               alt="JavaScript" />
               <p>JavaScript</p>
             </div>
             <div className="tech-card">
-              <img src="/icons/GitHub.webp" alt="GitHub" />
+              <img
+              src={`${import.meta.env.BASE_URL}icons/GitHub.webp`}
+               alt="GitHub" />
               <p>GitHub</p>
             </div>
           </div>
@@ -341,7 +349,7 @@ const FleetTracker = () => {
           </p>
           <div className="preview-image">
             <img
-              src="/imgforabout/Fleet-Track live.jpg"
+            src={`${import.meta.env.BASE_URL}imgforabout/Fleet-Track live.jpg`}
               loading="lazy"
               alt="Fleet Tracker UI Preview"
             />
@@ -368,7 +376,7 @@ const FleetTracker = () => {
           <div className="gallery-grid">
             <a href="/imgforabout/dashboard-view.png" className="lightbox">
               <img
-                src="/imgforabout/dashboard-view.png"
+              src={`${import.meta.env.BASE_URL}imgforabout/dashboard-view.png`}
                 alt="Dashboard Screenshot"
                 loading="lazy"
               />
@@ -378,7 +386,7 @@ const FleetTracker = () => {
               className="lightbox"
             >
               <img
-                src="/imgforabout/Driver-Behaviour-analysis.png"
+                src={`${import.meta.env.BASE_URL}imgforabout/Driver-Behaviour-analysis.png`}
                 alt="Driver Analytics Screenshot"
                 loading="lazy"
               />
@@ -386,7 +394,7 @@ const FleetTracker = () => {
             </a>
             <a href="/imgforabout/Vehicle-report.png" className="lightbox">
               <img
-                src="/imgforabout/Vehicle-report.png"
+                src={`${import.meta.env.BASE_URL}imgforabout/Vehicle-report.png`}
                 alt="Vehicle Performance Screenshot"
                 loading="lazy"
               />

@@ -28,11 +28,9 @@ export default function SmartLogisticsfromDS() {
   <meta name="author" content="Emeka Goodness Locksley" />
 
   {/* Favicon */}
-  <link rel="icon" href="/imgforabout/locksley-icon.png" type="image/png" />
+  <link rel="icon" href="/public/locksley-icon.png" type="image/png" />
 
   {/* Stylesheets */}
-  <link rel="stylesheet" href="assets/global.css" />
-  <link rel="stylesheet" href="assets/smart-logistics.css" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -172,7 +170,8 @@ export default function SmartLogisticsfromDS() {
                   </p>
                 </div>
                 <div className="intro-image">
-                  <img src="/imgforabout/strategy-insight.jpg"
+                  <img
+                  src={`${import.meta.env.BASE_URL}imgforabout/strategy-insight.jpg`}
                    alt="Logistics Strategy Visualization"
                    style={{ width: '100%', height: 'auto' }}
                   />
@@ -188,22 +187,30 @@ export default function SmartLogisticsfromDS() {
               <p className="section-subtitle">Smart logistics is powered by strategic data systems</p>
               <div className="pillars-grid">
                 <div className="pillar-card">
-                  <img src="/icons/data-analytics.png" alt="Data Analytics Icon" />
+                  <img
+                  src={`${import.meta.env.BASE_URL}icons/data-analytics.png`}
+                   alt="Data Analytics Icon" />
                   <h3>Data Analytics</h3>
                   <p>We harness predictive analytics to forecast demand, identify risks, and optimize transport decisions.</p>
                 </div>
                 <div className="pillar-card">
-                  <img src="/icons/iot-sensors.png" alt="IoT Sensors Icon" />
+                  <img 
+                  src={`${import.meta.env.BASE_URL}icons/iot-sensors.png`}
+                   alt="IoT Sensors Icon" />
                   <h3>IoT &amp; Sensors</h3>
                  <p>Our smart sensors provide real-time tracking and performance monitoring across the entire supply chain.</p>
                 </div>
                 <div className="pillar-card">
-                  <img src="/icons/fleet-optimization.png" alt="Fleet Icon" />
+                  <img 
+                  src={`${import.meta.env.BASE_URL}icons/fleet-optimization.png`}
+                   alt="Fleet Icon" />
                   <h3>Fleet Optimization</h3>
                   <p>Through route optimization and fuel efficiency data, we reduce costs and environmental impact.</p>
                 </div>
                 <div className="pillar-card">
-                  <img src="/icons/aI-icon.png" alt="AI Decision Icon" />
+                  <img
+                  src={`${import.meta.env.BASE_URL}icons/aI-icon.png`}
+                   alt="AI Decision Icon" />
                   <h3>AI-Driven Decisions</h3>
                   <p>Our AI systems learn and adapt to deliver the most efficient logistical outcomes at scale.</p>
                 </div>
@@ -217,22 +224,29 @@ export default function SmartLogisticsfromDS() {
               <p className="section-subtitle">Empowering logistics through automation, intelligence, and integration</p>
               <div className="tools-grid">
                 <div className="tool-card">
-                  <img src="/icons/predictive-analytics.png" alt="Predictive Analytics" />
+                  <img
+                  src={`${import.meta.env.BASE_URL}icons/predictive-analytics.png`}                    alt="Predictive Analytics" />
                   <h3>Predictive Analytics</h3>
                   <p>Anticipate logistics disruptions and drive smarter scheduling with real-time insights.</p>
                 </div>
                 <div className="tool-card">
-                  <img src="/icons/gps-tracking.png" alt="GPS Tracking" />
+                  <img 
+                  src={`${import.meta.env.BASE_URL}icons/gps-tracking.png`}
+                   alt="GPS Tracking" />
                   <h3>GPS Tracking</h3>
                   <p>Enhance route efficiency and visibility across fleets using GPS-powered systems.</p>
                 </div>
                 <div className="tool-card">
-                  <img src="/icons/cloud-integration.png" alt="Cloud Integration" />
+                  <img 
+                  src={`${import.meta.env.BASE_URL}icons/cloud-integration.png`}
+                   alt="Cloud Integration" />
                   <h3>Cloud Integration</h3>
                   <p>Seamlessly sync operations across teams and geographies using cloud logistics software.</p>
                 </div>
                 <div className="tool-card">
-                  <img src="/icons/supply-chain-automation.png" alt="Automation" />
+                  <img 
+                  src={`${import.meta.env.BASE_URL}icons/supply-chain-automation.png`}
+                  alt="Automation" />
                   <h3>Supply Chain Automation</h3>
                   <p>Reduce manual tasks and improve speed through AI-powered logistics workflows.</p>
                 </div>
@@ -254,7 +268,9 @@ export default function SmartLogisticsfromDS() {
                   <a href="#contact" className="btn-cta">Talk to a Consultant</a>
                 </div>
                 <div className="impact-image">
-                  <img src="/imgforabout/impact-case.jpg"
+                  
+                  <img 
+                  src={`${import.meta.env.BASE_URL}imgforabout/impact-case.jpg`}
                    alt="Fleet Dashboard Analysis"
                    style={{ width: '100%', height: 'auto' }}
                    />
@@ -282,7 +298,13 @@ export default function SmartLogisticsfromDS() {
           <section className="download-strategy container" data-aos="fade-up">
             <h3>Download Full Strategy Document</h3>
             <p>Get the complete <strong>Smart Logistics Strategy</strong> in a professionally prepared Word document.</p>
-            <a href="/docs/Smart_Logistics_Strategy.pdf" download className="btn-download">Download Now</a>
+           <a
+    href={`${import.meta.env.BASE_URL}docs/Smart_Logistics_Strategy.pdf`}
+    download
+    className="btn-download"
+  >
+    Download Now
+  </a>
           </section>
           {/* Why Smart Logistics Matters Section */}
           <section id="why-logistics" className="why-logistics">
@@ -361,22 +383,30 @@ export default function SmartLogisticsfromDS() {
               <p className="why-intro">We combine deep logistics expertise with cutting-edge data intelligence to deliver strategic outcomes.</p>
               <div className="why-grid">
                 <div className="why-box">
-                  <img src="/icons/visibility.png" alt="Real-time Visibility" />
+                  <img 
+                  src={`${import.meta.env.BASE_URL}icons/visibility.png`}
+                   alt="Real-time Visibility" />
                   <h3>Real-time Visibility</h3>
                   <p>Get live updates and actionable insights across your entire supply chain.</p>
                 </div>
                 <div className="why-box">
-                  <img src="/icons/predictive-analytics.png" alt="Predictive Analytics" />
+                  <img 
+                  src={`${import.meta.env.BASE_URL}icons/predictive-analytics.png`}
+                  alt="Predictive Analytics" />
                   <h3>Predictive Analytics</h3>
                   <p>We forecast risks and opportunities using AI-powered models.</p>
                 </div>
                 <div className="why-box">
-                  <img src="/icons/transport-strategy.png" alt="Custom Strategy" />
+                  <img 
+                  src={`${import.meta.env.BASE_URL}icons/transport-strategy.png`}
+                   alt="Custom Strategy" />
                   <h3>Custom Strategy</h3>
                   <p>Solutions tailored to your business model, market and geography.</p>
                 </div>
                 <div className="why-box">
-                  <img src="/icons/scalable-operations.png" alt="Scalable Operations" />
+                  <img 
+                  src={`${import.meta.env.BASE_URL}icons/scalable-operations.png`}
+                   alt="Scalable Operations" />
                   <h3>Scalable Operations</h3>
                   <p>Deploy fast. Scale with ease. Our tools grow with your goals.</p>
                 </div>
@@ -391,22 +421,30 @@ export default function SmartLogisticsfromDS() {
               </div>
               <div className="tools-grid" data-aos="fade-up" data-aos-delay={100}>
                 <div className="tool-item">
-                  <img src="/icons/data-analytics.png" alt="Data Analytics Icon" />
+                  <img 
+                  src={`${import.meta.env.BASE_URL}icons/data-analytics.png`}
+                   alt="Data Analytics Icon" />
                   <h3>Advanced Analytics</h3>
                   <p>Utilizing big data tools to uncover trends and drive predictive transport decisions.</p>
                 </div>
                 <div className="tool-item">
-                  <img src="/icons/gps-tracking.png" alt="GPS Tracking Icon" />
+                  <img
+                  src={`${import.meta.env.BASE_URL}icons/gps-tracking.png`}
+                   alt="GPS Tracking Icon" />
                   <h3>GPS Tracking</h3>
                   <p>End-to-end vehicle and asset visibility with real-time geolocation tracking systems.</p>
                 </div>
                 <div className="tool-item">
-                  <img src="/icons/cloud-integration.png" alt="Cloud Integration Icon" />
+                  <img 
+                  src={`${import.meta.env.BASE_URL}icons/cloud-integration.png`}
+                   alt="Cloud Integration Icon" />
                   <h3>Cloud Integration</h3>
                   <p>Scalable cloud services for seamless logistics data access across stakeholders.</p>
                 </div>
                 <div className="tool-item">
-                  <img src="/icons/ai-svg.png" alt="AI Optimization Icon" />
+                  <img 
+                  src={`${import.meta.env.BASE_URL}icons/ai-svg.png`}
+                   alt="AI Optimization Icon" />
                   <h3>AI Optimization</h3>
                   <p>Machine learning algorithms suggest the most efficient delivery and routing options.</p>
                 </div>
