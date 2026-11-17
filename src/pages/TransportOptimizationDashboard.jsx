@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../assets/css/style.css";
-import "../assets/css/Transport-dashboard.css";
+import "../assets/css/transport-dashboard.css";
 import { Link } from "react-router-dom";
 
 
