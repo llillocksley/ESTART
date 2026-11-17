@@ -17,7 +17,6 @@ const projectData = [
     image: `${import.meta.env.BASE_URL}imgforabout/Espace.jpeg`,
     internal:true,
     path: '/Portfolio',   // ✅ React route instead of portfolio.html
-    internal: true,
     icon: null,
   },
   {
