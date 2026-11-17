@@ -331,7 +331,7 @@ const TransportCostTracker = () => {
               Explore a professionally structured transport cost report to see how
               insights are captured and presented.
             </p>
-<a
+  <a
     href={`${import.meta.env.BASE_URL}docs/sample-cost-report.pdf`}
     download className="btn-download"
   >

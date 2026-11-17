@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="nav-container">
         {/* Logo */}
         <Link to="/" className="nav-logo">
-          Emeka Locksley
+          EMEKA GOODNESS LOCKSLEY
         </Link>
 
         {/* Hamburger Icon */}

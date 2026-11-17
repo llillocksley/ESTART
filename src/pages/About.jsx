@@ -83,7 +83,7 @@ const About = () => {
             />
           </div>
           <div className="about-text-box">
-            <h1 className="main-heading">Meet Emeka Locksley</h1>
+            <h1 className="main-heading">Meet Emeka Goodness Locksley</h1>
             <h3 className="sub-heading">Innovation | Integrity | Impact</h3>
             <p>
               I am a passionate and forward-thinking web developer driven by the
@@ -210,7 +210,7 @@ const About = () => {
         <div className="intro-content">
           <h2>Who I Am</h2>
           <p>
-            I’m Emeka Locksley, a driven and solution-focused web developer with a
+            I’m Emeka Goodness Locksley, a driven and solution-focused web developer with a
             passion for transforming ideas into practical, user-friendly digital
             experiences. My mission is to contribute to industries through
             technology, professionalism, and continuous improvement.
